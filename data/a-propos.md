@@ -4,6 +4,12 @@
 
 ---
 
+## Centres d'intérêt
+
+Je suis passionnée par le basket-ball que je pratique depuis de nombreuses années.
+
+---
+
 ## Le basket-ball
 
 Je pratique le basket-ball depuis l'âge de 6 ans au sein du **Basket Club de Chauray (BCC)**.  

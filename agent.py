@@ -42,14 +42,13 @@ def search_portfolio(query: str) -> str:
         if not results:
             return "Aucune information trouvée dans le portfolio."
         
-        # Formater les résultats
+        # Formater les résultats sans mentionner les sources
         context = []
-        for i, result in enumerate(results, 1):
-            title = result.metadata.get('title', 'N/A')
+        for result in results:
             content = result.metadata.get('content', '')
-            context.append(f"[Source {i}: {title}]\n{content}\n")
+            context.append(content)
         
-        return "\n---\n".join(context)
+        return "\n\n".join(context)
         
     except Exception as e:
         return f"Erreur lors de la recherche: {e}"
@@ -73,8 +72,8 @@ Consignes importantes :
 - Si la première recherche ne donne pas assez de résultats, faire une recherche complémentaire avec des mots-clés différents
 - Par exemple, pour "projets en data visualisation", chercher aussi "plotly", "power bi", "graphiques", "tableaux de bord"
 - Lister TOUS les projets trouvés, pas seulement les plus pertinents
-- Citer les sources quand tu mentionnes des informations spécifiques
 - Ne pas inventer d'informations qui ne sont pas dans le portfolio
+- Ne pas mentionner les sources ou numéros de sources dans ta réponse
 - Être concis mais complet dans tes réponses""",
     tools=[search_portfolio]
 )
