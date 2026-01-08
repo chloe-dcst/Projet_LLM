@@ -3,8 +3,13 @@ Interface Streamlit pour interagir avec l'agent portfolio.
 """
 
 import streamlit as st
+import uuid
 from agent import portfolio_agent
 from agents import Runner
+from conversation_manager import ConversationManager
+
+# Initialiser le gestionnaire de conversations
+conv_manager = ConversationManager()
 
 # Configuration de la page
 st.set_page_config(
@@ -27,6 +32,14 @@ Posez-moi des questions sur le parcours, les compétences et les projets de Chlo
 # Initialiser l'historique des messages
 if "messages" not in st.session_state:
     st.session_state.messages = []
+
+# Initialiser un ID de session unique
+if "session_id" not in st.session_state:
+    st.session_state.session_id = str(uuid.uuid4())
+    # Charger l'historique depuis Redis si disponible
+    loaded_messages = conv_manager.load_conversation(st.session_state.session_id)
+    if loaded_messages:
+        st.session_state.messages = loaded_messages
 
 # Afficher l'historique des messages
 for message in st.session_state.messages:
@@ -62,9 +75,28 @@ if prompt := st.chat_input("Posez votre question..."):
     
     # Ajouter la réponse à l'historique
     st.session_state.messages.append({"role": "assistant", "content": response})
+    
+    # Sauvegarder dans Redis
+    conv_manager.save_conversation(st.session_state.session_id, st.session_state.messages)
 
 # Bouton pour effacer l'historique
 if st.session_state.messages:
-    if st.button("🗑️ Effacer la conversation"):
-        st.session_state.messages = []
-        st.rerun()
+    col1, col2 = st.columns([3, 1])
+    with col2:
+        if st.button("🗑️ Nouvelle conversation"):
+            # Supprimer de Redis
+            conv_manager.delete_conversation(st.session_state.session_id)
+            # Créer une nouvelle session
+            st.session_state.session_id = str(uuid.uuid4())
+            st.session_state.messages = []
+            st.rerun()
+
+# Afficher le statut Redis
+with st.sidebar:
+    st.markdown("### 💾 Sauvegarde")
+    if conv_manager.redis_available:
+        st.success("✅ Conversations sauvegardées dans Redis")
+        st.caption(f"Session: {st.session_state.session_id[:8]}...")
+    else:
+        st.warning("⚠️ Redis non configuré")
+        st.caption("Les conversations ne sont pas sauvegardées")
