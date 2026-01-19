@@ -1,25 +1,20 @@
-# Projets académiques
-
 *Retrouvez l'ensemble de mes projets réalisés durant ma formation en BUT Science des Données*
 
 ---
-
-## Projets de première année
-
-### Présentation de l'Islande
+# Présentation de l'Islande
 
 **Durée :** 2 semaines | **Groupe :** 3 personnes  
 **Technologies :** PowerPoint, Communication orale (anglais et français)
 
-#### Objectif
+## Objectif
 Présenter une destination touristique en anglais (8 min) et en français (8 min).
 
-#### Description
+## Description
 Par groupe de 3, nous avons choisi l'Islande comme territoire étranger à présenter à l'oral. Cette présentation s'est déroulée en deux temps :
 - **Premier temps en anglais** : aspect géographique, démographique et économique
 - **Second temps en français** : aspect culturel (histoire, religion, tourisme, nourriture)
 
-#### Évaluation
+## Évaluation
 **Note collective :**
 - Qualité des recherches et du contenu
 - Qualité du PowerPoint
@@ -29,26 +24,26 @@ Par groupe de 3, nous avons choisi l'Islande comme territoire étranger à prés
 - Prononciation
 - Posture et présence
 
-#### Compétences acquises
+## Compétences acquises
 - Qualité des recherches documentaires
 - Réalisation d'une présentation PowerPoint professionnelle
 - Prise de parole en anglais et en français
 - Organisation au sein d'un petit groupe
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet est le tout premier que j'ai réalisé au sein de ma formation. Bien qu'il ne nécessite pas de compétences techniques à proprement parler, il m'a apporté de précieux apprentissages. Il m'a permis de commencer à comprendre la répartition des tâches au sein d'un groupe ainsi que la gestion des délais. De plus, il m'aura aidé à améliorer mes capacités oratoires, notamment en anglais.
 
 ---
 
-### Étude démographique de la Martinique
+# Étude démographique de la Martinique
 
 **Durée :** 1 mois | **Travail individuel**  
 **Technologies :** Excel, Word
 
-#### Objectif
+## Objectif
 Faire une étude de la démographie et du marché du travail de la Martinique pour comprendre l'évolution de la population, du chômage et des emplois.
 
-#### Description
+## Description
 Pour ce faire, j'ai récolté les données du recensement de la population française de 2020 auprès de l'INSEE. Ensuite, j'ai extrait les données spécifiques à la Martinique afin de réaliser une analyse approfondie à l'aide d'Excel.
 
 Cette étude s'est déroulée en trois étapes :
@@ -58,7 +53,7 @@ Cette étude s'est déroulée en trois étapes :
 
 J'ai calculé divers indicateurs (moyennes, médianes, taux d'évolution, ratios) et construit des graphiques représentant ces résultats. Enfin, j'ai rédigé un rapport de 4 pages pour présenter les résultats obtenus.
 
-#### Compétences acquises
+## Compétences acquises
 - Collecte de données
 - Analyse de données avec Excel
 - Organisation de son espace de travail
@@ -66,20 +61,20 @@ J'ai calculé divers indicateurs (moyennes, médianes, taux d'évolution, ratios
 - Esprit critique et analytique
 - Utilisation avancée d'Excel
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet m'a permis de mettre en œuvre et d'approfondir mes connaissances en Excel. J'ai également appris à écrire un rapport (introduction, développement, conclusion), la disposition des graphiques et le choix des couleurs. J'ai acquis des compétences en analyse de résultats et en interprétation de graphiques.
 
 ---
 
-### Gestion de fichiers JSON/CSV
+# Gestion de fichiers JSON/CSV
 
 **Durée :** 4 heures | **Groupe :** 2 personnes  
 **Technologie :** Python
 
-#### Objectif
+## Objectif
 Transformer un fichier JSON en un fichier CSV contenant des colonnes spécifiques sur les pathologies et comorbidités.
 
-#### Description
+## Description
 Pour ce projet, nous disposions d'un fichier JSON contenant un jeu de données de patients et leurs pathologies. Nous devions :
 - Ouvrir le fichier en Python
 - Nettoyer et trier les données
@@ -87,33 +82,33 @@ Pour ce projet, nous disposions d'un fichier JSON contenant un jeu de données d
 
 Nous avons utilisé des **listes de listes**, des **boucles** et des **conditions**. Chaque ligne était traitée individuellement pour vérifier la présence de toutes les informations nécessaires. Une fois le traitement terminé, nous avons exporté la liste finale sous la forme d'un fichier CSV.
 
-#### Modalités d'évaluation
+## Modalités d'évaluation
 - Interprétation du besoin du commanditaire
 - Respect des formalismes de notation
 - Maîtrise de la syntaxe Python
 - Compréhension de l'importance de la structure des données
 - Utilisation des structures algorithmiques de base
 
-#### Compétences acquises
+## Compétences acquises
 - Import et export de fichiers (JSON, CSV)
 - Utilisation des listes, conditions et boucles en Python
 - Traitement et structuration de données
 - Communication et collaboration en binôme
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet constitue mon **premier projet technique** réalisé avec un langage de programmation. Il m'a permis de mettre en pratique les connaissances acquises en cours, de mieux comprendre le fonctionnement des listes en Python et d'apprendre à lire, écrire, importer et exporter des fichiers sous différents formats. Ce projet a posé des bases solides pour la suite de mon apprentissage en programmation.
 
 ---
 
-### Analyse d'enquête sur le logement étudiant
+# Analyse d'enquête sur le logement étudiant
 
 **Durée :** 4 jours | **Groupe :** 2 personnes  
 **Technologies :** Sphinx, Word
 
-#### Objectif
+## Objectif
 Rédiger un rapport de deux pages présentant l'analyse d'une enquête sur le logement étudiant.
 
-#### Description
+## Description
 Nous avons commencé par **saisir les réponses des étudiants** ayant participé à l'enquête dans le logiciel **Sphinx**, afin de pouvoir les exploiter et les analyser.
 
 Une fois l'ensemble des réponses saisies et vérifiées, nous avons conçu l'**organigramme de l'enquête**, ce qui nous a permis de structurer les différentes questions et thématiques abordées.
@@ -123,27 +118,27 @@ Nous avons ensuite procédé à l'**analyse exploratoire des données** dans le 
 - D'interpréter les résultats obtenus
 - De proposer une analyse claire et synthétique dans le rapport final
 
-#### Compétences acquises
+## Compétences acquises
 - Utilisation du logiciel Sphinx
 - Construction d'un organigramme d'enquête
 - Création de graphiques pertinents et lisibles
 - Recherche de titres explicites et percutants
 - Rédaction et synthèse d'une analyse de données
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet m'a permis d'acquérir une première expérience approfondie avec le logiciel Sphinx, notamment pour l'analyse et la présentation des résultats d'une enquête. Il m'a également fait travailler la réflexion analytique, en particulier pour trouver des titres cohérents et impactants, capables de donner du sens aux graphiques et aux résultats présentés.
 
 ---
 
-### PanNote : Gestionnaire de notes en VBA
+# PanNote : Gestionnaire de notes en VBA
 
 **Durée :** 1 semaine | **Groupe :** 2 personnes  
 **Technologies :** Excel, VBA, Word
 
-#### Objectif
+## Objectif
 Réaliser un outil personnel de gestion des notes pour le BUT SD1 avec Excel (VBA).
 
-#### Description
+## Description
 Pour réaliser cet outil, nous nous sommes servis de VBA pour concevoir une interface utilisateur et pour automatiser au maximum notre outil. Nous avons également utilisé Excel pour la partie visuelle.
 
 **Fonctionnalités :**
@@ -160,7 +155,7 @@ Pour cela, nous avons intégré des boutons et des listes déroulantes dans des 
 - Feuille cachée pour lier les feuilles et gérer le passage en deuxième année
 - Tutoriel explicatif du fonctionnement
 
-#### Évaluation
+## Évaluation
 **Qualité technique (2/3) :**
 - Opérationnalité
 - Optimisation
@@ -170,27 +165,27 @@ Pour cela, nous avons intégré des boutons et des listes déroulantes dans des 
 
 **Évaluation individuelle à l'oral (1/3)**
 
-#### Compétences acquises
+## Compétences acquises
 - Langage VBA (procédures, boutons, listes déroulantes)
 - Approfondissement d'Excel
 - Ergonomie d'interface
 - Organisation et répartition des tâches en binôme
 - Respect d'un cahier des charges et des délais
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet est le premier que nous avons réalisé sur une semaine complète bloquée, nécessitant une bonne organisation. Grâce à ce projet, j'ai pu approfondir mes compétences en VBA. Bien que j'aie principalement travaillé sur le visuel et le tutoriel, j'ai également participé à l'écriture du code. Ce projet nous a appris l'importance de la communication et de la répartition des tâches pour être le plus efficace possible. Nous avons dû faire preuve de persévérance pour surmonter les difficultés rencontrées.
 
 ---
 
-### Base de données SDIS79
+# Base de données SDIS79
 
 **Durée :** 4 semaines | **Groupe :** 3 personnes  
 **Technologies :** Python, MySQL, SQL, Word
 
-#### Objectif
+## Objectif
 Améliorer les moyens de transmission de l'alerte du SDIS79 en créant une base de données relationnelle et une application d'interface.
 
-#### Description
+## Description
 Dans le cadre de ce projet, nous avons d'abord élaboré un **modèle conceptuel de données** à l'aide du logiciel **Looping**, ce qui nous a permis de concevoir la structure de la base de données.
 
 À partir de ce modèle, nous avons généré le **modèle relationnel en SQL**, puis l'avons importé dans **MySQL** afin de créer la base de données *SDIS79*.
@@ -205,34 +200,34 @@ Dans le cadre de ce projet, nous avons d'abord élaboré un **modèle conceptuel
    - D'insérer un nouveau tuple dans une table
 6. Rédaction d'un rapport détaillant l'ensemble du projet
 
-#### Modalités d'évaluation
+## Modalités d'évaluation
 - Interprétation et prise en compte du besoin du commanditaire
 - Respect des formalismes de notation
 - Maîtrise de la syntaxe des langages utilisés
 - Compréhension de l'importance des structures de données
 - Utilisation des structures algorithmiques de base
 
-#### Compétences acquises
+## Compétences acquises
 - Conception d'un modèle conceptuel de données
 - Utilisation de MySQL
 - Écriture de requêtes en SQL
 - Connexion Python/MySQL (MySQL Connector)
 - Développement d'une interface avec Tkinter
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet m'a permis d'approfondir mes compétences en SQL et en Tkinter, domaines sur lesquels j'ai principalement travaillé. Il m'a également permis de mieux comprendre l'utilisation des fonctions et procédures, et de les maîtriser davantage. Nous avons dû développer notre capacité à effectuer des recherches autonomes afin de trouver des solutions lorsque nous étions bloqués. Ce projet nous a aussi demandé de faire preuve de créativité et d'anticipation, afin d'imaginer différents scénarios d'utilisation de l'application. Enfin, ce projet m'a permis de renforcer ma persévérance et ma détermination face aux difficultés rencontrées.
 
 ---
 
-### Estimation par échantillonnage
+# Estimation par échantillonnage
 
 **Durée :** 3 semaines | **Groupe :** 2 personnes  
 **Technologies :** R, Excel, Word
 
-#### Objectif
+## Objectif
 Estimer le nombre d'habitants d'une région française et réaliser un test d'indépendance du khi-deux.
 
-#### Description
+## Description
 Pour l'estimation de la population, nous avons choisi la région **Centre-Val de Loire**.
 
 Notre mission consistait à effectuer cette estimation à l'aide de **deux méthodes distinctes** :
@@ -243,26 +238,26 @@ Nous disposions d'un fichier contenant les données de population de toutes les 
 
 Dans un second temps, nous avons réalisé un **test d'indépendance du khi-deux** pour déterminer s'il existait un lien statistique entre la prime et une autre variable à partir d'un fichier Excel.
 
-#### Compétences acquises
+## Compétences acquises
 - Programmation statistique en R
 - Réalisation d'un test d'indépendance du khi-deux
 - Analyse et interprétation de résultats statistiques
 - Explication claire de la démarche méthodologique
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet m'a permis de mettre en application concrètement les notions vues en cours. Il m'a également appris à informatiser et automatiser des méthodes statistiques initialement réalisées sur papier, ce qui m'a permis de mieux comprendre leur fonctionnement et leur intérêt en pratique.
 
 ---
 
-### Concours de datavisualisation
+# Concours de datavisualisation
 
 **Durée :** 1 jour | **Groupe :** 5 personnes  
 **Technologie :** Power BI
 
-#### Objectif
+## Objectif
 Présenter une datavisualisation répondant à la problématique : *"Les données climatologiques du réseau de Météo-France : une matière vivante dont vous donnerez à voir l'évolution".*
 
-#### Description
+## Description
 Dans un premier temps, nous avons rapidement trouvé une problématique : **« Le changement climatique : INFO ou INTOX ? »**
 
 Nous avons sélectionné plusieurs **départements répartis sur le territoire français**, situés approximativement aux cinq points cardinaux, afin de prendre en compte les différents climats et de pouvoir les comparer.
@@ -275,7 +270,7 @@ Après avoir récupéré les tables correspondant aux départements choisis, nou
 
 En fin de journée, nous avons présenté notre travail devant un jury et l'ensemble de notre promotion.
 
-#### Modalités d'évaluation
+## Modalités d'évaluation
 - Qualité et originalité de la problématique
 - Qualité de la rédaction et orthographe
 - Qualité visuelle et originalité des graphiques
@@ -283,29 +278,29 @@ En fin de journée, nous avons présenté notre travail devant un jury et l'ense
 - Originalité du support utilisé
 - Qualité de l'oral
 
-#### Compétences acquises
+## Compétences acquises
 - Utilisation de Power BI
 - Traitement d'une grosse base de données
 - Organisation du travail en groupe et gestion du temps
 - Gestion de la pression
 - Prise de parole devant un public nombreux
 
-#### Bilan personnel
+## Bilan personnel
 Bien que ce projet ait été relativement court, il a parfois été frustrant car nous n'avons pas pu réaliser tout ce que nous avions initialement prévu. Cependant, il m'a permis de prendre rapidement en main Power BI, de travailler au sein d'un groupe plus important que d'habitude et de produire un travail de qualité sous forte contrainte de temps.
 
 Le fait que ce projet prenne la forme d'un **concours** nous a fortement motivés. Cette implication a porté ses fruits puisque mon équipe et moi avons terminé **premiers de notre promotion**. Nous avons ainsi participé au concours national de datavisualisation.
 
 ---
 
-### Analyse des accidents de la vie courante
+# Analyse des accidents de la vie courante
 
 **Durée :** 2 semaines | **Groupe :** 5 personnes  
 **Technologies :** Python, Power BI, Word
 
-#### Objectif
+## Objectif
 Réaliser un outil dynamique permettant de déterminer l'ampleur et les caractéristiques des accidents de la vie courante (AcVC) en France, identifier les facteurs de survenue et de gravité, et proposer des mesures de prévention adaptées.
 
-#### Description
+## Description
 Nous avons travaillé à partir de deux tables de données issues de questionnaires distincts :
 - Un questionnaire général destiné à tous les volontaires
 - Un questionnaire spécifique rempli uniquement par les personnes ayant eu un accident
@@ -325,7 +320,7 @@ Nous avons développé :
 
 Nous avons rédigé un rapport collectif et un rapport personnel.
 
-#### Compétences acquises
+## Compétences acquises
 - Utilisation de fonctions et de procédures en Python
 - Création d'une interface graphique avec Tkinter
 - Liaison entre différents outils (Python et Power BI)
@@ -335,20 +330,20 @@ Nous avons rédigé un rapport collectif et un rapport personnel.
 - Travail en équipe
 - Méthode Scrum
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet est le **plus long et le plus important** réalisé durant ma première année de formation. Il m'a permis de mobiliser l'ensemble des compétences acquises tout au long de l'année. J'ai toutefois été déçue par la faible quantité de données exploitables. Malgré cela, ce projet a été très formateur et m'a permis de mieux comprendre les enjeux réels de l'analyse de données et de la datavisualisation.
 
 ---
 
-### Indicateurs de performance Poujoulat
+# Indicateurs de performance Poujoulat
 
 **Durée :** 1 jour | **Groupe :** 2 personnes  
 **Technologies :** Excel, Word
 
-#### Objectif
+## Objectif
 Réaliser un dossier d'étude portant sur l'entreprise Poujoulat, à partir de ses documents comptables.
 
-#### Description
+## Description
 Nous disposions des documents suivants :
 - Le compte de résultat au 31 mars 2023, avec rappel des soldes au 31 mars 2022
 - Les bilans de Poujoulat SA au 31 mars 2023 et au 31 mars 2022
@@ -360,33 +355,31 @@ Nous disposions des documents suivants :
 
 Une fois les tableaux complétés, mon collègue s'est chargé de la réalisation des graphiques tandis que j'ai rédigé l'intégralité du dossier d'étude sur Word.
 
-#### Modalités d'évaluation
+## Modalités d'évaluation
 - Qualité rédactionnelle
 - Qualité de l'argumentation
 - Pertinence et choix des indicateurs
 
-#### Compétences acquises
+## Compétences acquises
 - Remplissage de tableaux comptables
 - Calcul d'indicateurs et de ratios financiers
 - Présentation d'une entreprise et de son activité
 - Analyse de l'activité et de la performance d'une entreprise
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet m'a permis de mettre en application concrète les notions vues en cours de gestion, notamment la construction d'un tableau des soldes intermédiaires de gestion, la réalisation d'un bilan fonctionnel et le calcul et l'interprétation d'indicateurs et de ratios. Il m'a également aidée à mieux comprendre la méthodologie d'analyse de l'activité d'une entreprise et la manière de structurer un dossier d'étude clair et argumenté.
 
 ---
 
-## Projets de deuxième année
-
-### Ordiginal : Site web dynamique
+# Ordiginal : Site web dynamique
 
 **Durée :** 7 semaines | **Groupe :** 3 personnes  
 **Technologies :** HTML/CSS, PHP, JavaScript, MySQL
 
-#### Objectif
+## Objectif
 Concevoir un site web complètement dynamique sur un sujet au choix à partir d'un jeu de données issu de l'OpenData.
 
-#### Description
+## Description
 Nous avons choisi de créer une application web sur les ordinateurs pour conseiller une personne dans le choix d'un ordinateur. Elle permet également de voir l'avis des clients ayant acheté un ordinateur et de visualiser les modèles les plus populaires grâce à une page statistique.
 
 Comme nous n'avions pas de base OpenData, nous avons conçu notre propre base comprenant 4 tables : `ordi`, `client`, `commande` et `avis`. Chaque table a été insérée dans MySQL via easyphpMyAdmin.
@@ -411,12 +404,12 @@ Comme nous n'avions pas de base OpenData, nous avons conçu notre propre base co
 
 Nous avons rédigé un rapport détaillant toutes les étapes, le diagramme UML, la répartition du travail, les fonctionnalités et les améliorations possibles.
 
-#### Évaluation
+## Évaluation
 - Application web complète : ergonomie, complexité et facilité d'utilisation
 - Livrables : diagramme UML, rapport et base de données
 - Rapport : commentaires et organisation du groupe
 
-#### Compétences acquises
+## Compétences acquises
 - Réalisation d'un site web dynamique
 - Utilisation d'easyphpMyAdmin
 - Conception d'une base de données
@@ -425,20 +418,20 @@ Nous avons rédigé un rapport détaillant toutes les étapes, le diagramme UML,
 - Utilisation de JavaScript et jQuery pour les graphiques
 - Organisation au sein du groupe
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet a été très enrichissant et m'a permis de mettre en pratique mes compétences en HTML/CSS, PHP, JavaScript et MySQL. J'ai appris à concevoir des formulaires en PHP, utiliser jQuery pour les graphiques et gérer une base de données via easyphpMyAdmin. Le projet a également nécessité créativité et inventivité, notamment pour créer notre propre base de données et organiser la conception du site. Enfin, il m'a appris à bien planifier et répartir les tâches dans un délai étendu.
 
 ---
 
-### Application AirBnb Paris
+# Application AirBnb Paris
 
 **Durée :** 2 semaines | **Groupe :** 4 personnes  
 **Technologies :** HTML/CSS, JavaScript/Plotly
 
-#### Objectif
+## Objectif
 Créer une application web sur les statistiques des logements AirBnb à Paris en utilisant la technologie Plotly.
 
-#### Description
+## Description
 Pour réaliser cette application web, nous devions utiliser le framework Plotly de JavaScript et respecter quelques contraintes :
 
 **Premier onglet :** ensemble de graphiques et tableaux liés sur les variables (type de logement, prix, autres informations pertinentes) avec filtres, et si possible une carte globale de Paris indiquant chaque logement.
@@ -449,30 +442,30 @@ Pour réaliser cette application web, nous devions utiliser le framework Plotly 
 
 Nous avons choisi de créer une page différente pour chaque onglet. Tout fonctionne correctement, mais pour des améliorations futures, nous aurions voulu que, sur la page Analyse des données, certains graphiques camemberts disparaissent lors de la sélection d'un type de logement spécifique.
 
-#### Évaluation
+## Évaluation
 - Présentation de l'outil développé
 - Qualité des commentaires et de la présentation
 - Utilisation de la technologie Plotly
 
-#### Compétences acquises
+## Compétences acquises
 - Apprendre à utiliser la technologie Plotly
 - Création de graphiques interactifs
 - Visualisation de données géographiques
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet m'a permis de découvrir la technologie Plotly et de l'utiliser pour créer des graphiques et des tableaux interactifs.
 
 ---
 
-### Application VBA de sélection football
+# Application VBA de sélection football
 
 **Durée :** 10 semaines | **Groupe :** 2 personnes  
 **Technologies :** VBA, Excel
 
-#### Objectif
+## Objectif
 Élaborer une application en VBA pour gérer la sélection des candidats en section sportive de football.
 
-#### Description
+## Description
 Le projet est structuré en plusieurs parties :
 
 **1. Répartition des joueurs :**
@@ -493,7 +486,7 @@ Le projet est structuré en plusieurs parties :
 **4. Cartographie :**
 - Visualisation de l'origine des joueurs via une carte avec filtre par région
 
-#### Évaluation
+## Évaluation
 - Fonctionnalité de l'application
 - Optimisation, bonnes pratiques et commentaires du code
 - Niveau d'exigence des fonctionnalités
@@ -501,27 +494,27 @@ Le projet est structuré en plusieurs parties :
 - Amélioration de l'ergonomie des feuilles de calcul
 - Propositions supplémentaires, créativité et pertinence des choix
 
-#### Compétences acquises
+## Compétences acquises
 - Utilisation et approfondissement de VBA
 - Création d'un tableau de bord dynamique
 - Liaison entre VBA et Excel (graphiques)
 - Automatisation et optimisation du code avec procédures et fonctions réutilisables
 - Respect du cahier des charges
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet a été long mais très enrichissant. Il m'a permis de mettre en pratique : user forms, objets VBA (boutons, listes), fonctions Excel personnalisées, graphiques dynamiques et liens entre feuilles/fichiers Excel. Il m'a permis de progresser significativement dans l'utilisation du langage VBA.
 
 ---
 
-### Régression immobilière Paris
+# Régression immobilière Paris
 
 **Durée :** 2 semaines | **Groupe :** 2 personnes  
 **Technologies :** R, Excel, Word
 
-#### Objectif
+## Objectif
 Déterminer le meilleur modèle de prédiction pour prédire le prix de vente des logements à Paris.
 
-#### Description
+## Description
 Pour prédire la valeur foncière des biens immobiliers à Paris, nous disposions de 2 fichiers :
 - Un fichier "test" avec les valeurs à prédire
 - Un fichier "train" pour tester nos modèles
@@ -532,32 +525,32 @@ Nous avons subdivisé chaque catégorie en regroupant les logements par arrondis
 
 Sur R, nous avons reproduit la même répartition des logements et appliqué nos modèles pour prédire les valeurs foncières. Nous avons ensuite rédigé un rapport détaillé expliquant notre démarche.
 
-#### Évaluation
+## Évaluation
 - Méthodologie utilisée et profondeur des recherches
 - Complexité du modèle retenu
 - Qualité et clarté du texte explicatif
 - Clarté et efficacité du code R
 - Précision des prédictions (somme des carrés des résidus)
 
-#### Compétences acquises
+## Compétences acquises
 - Application des quatre modèles de régression simple
 - Application des modèles sur Excel et sur R
 - Explication de sa démarche
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet m'a offert l'occasion de renforcer mes compétences en R. J'ai pu mettre en pratique l'application d'un modèle linéaire sur un cas concret et perfectionner mes capacités rédactionnelles. Ce projet était une sorte de mini-compétition au sein de la promotion, visant à obtenir la plus faible somme des carrés des résidus (SR²), et c'est mon binôme qui a obtenu le score le plus bas.
 
 ---
 
-### Étude prévisionnelle des importations
+# Étude prévisionnelle des importations
 
 **Durée :** 4 semaines | **Travail individuel**  
 **Technologies :** Excel, Word
 
-#### Objectif
+## Objectif
 Écrire un rapport d'étude prévisionnelle, de 3 à 4 pages, sur l'importation d'un pays de l'OCDE.
 
-#### Description
+## Description
 Pour cette étude, j'ai choisi l'Australie.
 
 **Démarche :**
@@ -569,32 +562,32 @@ Pour cette étude, j'ai choisi l'Australie.
 
 **Conclusion :** les importations australiennes devraient se stabiliser d'ici 2025, après une légère baisse fin 2024.
 
-#### Évaluation
+## Évaluation
 - Qualité de l'analyse
 - Choix du modèle
 - Qualité de la présentation
 - Qualité de la rédaction et argumentation
 
-#### Compétences acquises
+## Compétences acquises
 - Réaliser un modèle prédictif
 - Choisir le bon modèle à utiliser
 - Argumenter et expliquer un choix ou un résultat
 
-#### Bilan personnel
+## Bilan personnel
 Ce projet m'a permis de me familiariser avec les modèles prédictifs et de comprendre comment choisir le modèle approprié selon les données. Il m'a également appris à argumenter mes choix et à présenter les résultats de manière claire et concise, mettant la théorie en pratique.
 
 ---
 
-### Portfolio personnel
+# Portfolio personnel
 
 **Durée :** 1 mois | **Travail individuel**  
 **Technologies :** HTML, CSS
 
-#### Objectif
+## Objectif
 - Construire un portfolio présentant mon profil professionnel
 - Mettre à jour le portfolio de l'année dernière en ajoutant de nouveaux projets et apporter des améliorations
 
-#### Description
+## Description
 J'ai créé mon portfolio manuellement en HTML et CSS. Pour la première version, je me suis inspiré d'un exemple trouvé sur YouTube pour la mise en page de la page d'accueil, mais tout le reste a été conçu par moi-même.
 
 **Contenu de la page d'accueil :**
@@ -608,26 +601,26 @@ J'ai créé mon portfolio manuellement en HTML et CSS. Pour la première version
 - Page "À propos de moi" avec bilan de l'année scolaire et de l'alternance
 - Possibilité de contact par e-mail (bouton "Contactez-moi") ou via les réseaux sociaux
 
-#### Évaluation
+## Évaluation
 - Ergonomie et forme du portfolio
 - Qualité de la présentation des projets
 - Qualité de la page "À propos de moi"
 - Qualité du bilan personnel
 
-#### Compétences acquises
+## Compétences acquises
 - HTML et CSS
 - Savoir expliquer ce qu'on a pu faire lors d'un projet
 - Savoir se présenter
 - Savoir faire un bilan objectif sur son année
 
-#### Bilan personnel
+## Bilan personnel
 Réaliser mon portfolio à la main m'a permis d'acquérir des compétences solides en HTML et CSS, d'apprendre à parler de moi et à faire ma présentation, et d'apprendre à faire un bilan objectif sur mon année et sur mon alternance.
 
 ---
 
-## Synthèse des compétences développées
+# Synthèse des compétences développées
 
-### Compétences techniques
+## Compétences techniques
 
 **Programmation :**
 - Python (traitement de données, interfaces Tkinter, automatisation)
@@ -652,7 +645,7 @@ Réaliser mon portfolio à la main m'a permis d'acquérir des compétences solid
 - Modélisation prédictive (régression)
 - Échantillonnage
 
-### Compétences transversales
+## Compétences transversales
 
 **Gestion de projet :**
 - Organisation du travail en équipe
@@ -680,15 +673,15 @@ Réaliser mon portfolio à la main m'a permis d'acquérir des compétences solid
 
 ---
 
-## Évolution dans les projets
+# Évolution dans les projets
 
-### Première année : Découverte et bases
+## Première année : Découverte et bases
 Les projets de première année m'ont permis d'acquérir les **bases fondamentales** en programmation, statistiques et datavisualisation. J'ai découvert de nouveaux langages et outils, et appris à travailler en équipe sur des projets techniques.
 
-### Deuxième année : Approfondissement et spécialisation
+## Deuxième année : Approfondissement et spécialisation
 Les projets de deuxième année ont été plus complexes et de plus longue durée. Ils m'ont permis d'**approfondir mes compétences techniques** et de développer mon autonomie. La spécialisation VCOD m'a orientée vers la visualisation de données et la création d'outils décisionnels.
 
-### Points forts développés
+## Points forts développés
 - **Persévérance** face aux difficultés techniques
 - **Créativité** dans la résolution de problèmes
 - **Rigueur** dans la qualité des livrables

@@ -1,10 +1,8 @@
-# À propos de Chloé Découst
-
 *Passionnée par la data science, le basket-ball et l'apprentissage continu*
 
 ---
 
-## Qui suis-je ?
+# Qui suis-je ?
 
 Étudiante en BUT Science des Données, je suis actuellement en troisième année en alternance au sein du groupe **Covéa**, où je travaille dans l'équipe *Pilotage – Opérationnel* de la direction **Santé Prévoyance**. Je suis en charge de la **création de tableaux de bord** pour le suivi de l'activité des équipes métiers.
 
@@ -12,9 +10,9 @@ Passionnée par la **visualisation de données** et la **création d'outils déc
 
 ---
 
-## Centres d'intérêt
+# Centres d'intérêt
 
-### Le basket-ball : ma passion
+## Le basket-ball : ma passion
 
 Je pratique le basket-ball depuis l'âge de 6 ans au sein du **Basket Club de Chauray (BCC)**. J'ai débuté à l'école de mini-basket et aujourd'hui, je joue en tant que **senior**.
 
@@ -22,7 +20,7 @@ J'ai évolué à un niveau **régional et départemental** tout au long de ces a
 
 En plus de cela, il m'arrive d'être **arbitre** et/ou de tenir la table (marqueuse ou chronométreuse).
 
-#### Ce que le basket m'a appris
+## Ce que le basket m'a appris
 
 Pratiquer ce sport depuis que je suis petite m'a permis d'acquérir des qualités essentielles :
 - la **rigueur**
@@ -34,9 +32,9 @@ Le fait de faire de l'arbitrage m'a également permis de prendre davantage **con
 
 ---
 
-## Compétences techniques
+# Compétences techniques
 
-### Langages de programmation
+## Langages de programmation
 - **Python** – maîtrise avancée
 - **JavaScript (JS)** – développement web
 - **HTML / CSS / PHP** – création de sites web
@@ -44,14 +42,14 @@ Le fait de faire de l'arbitrage m'a également permis de prendre davantage **con
 - **SQL** – gestion de bases de données
 - **R** – analyses statistiques
 
-### Frameworks et bibliothèques
+## Frameworks et bibliothèques
 - **React** – interfaces web modernes
 - **Plotly JS** – visualisations interactives
 - **Streamlit** – applications data
 - **Dash** – tableaux de bord
 - **Spark / Hive / HDFS** – big data
 
-### Logiciels et outils
+## Logiciels et outils
 - **Excel avancé** – modélisation et automatisation
 - **Power BI** – business intelligence
 - **Business Objects (BO)** – reporting
@@ -61,7 +59,7 @@ Le fait de faire de l'arbitrage m'a également permis de prendre davantage **con
 - **Word / PowerPoint** – documentation et présentation
 - **Diagrammes UML** – modélisation
 
-### Compétences analytiques
+## Compétences analytiques
 - **Modélisation prédictive** – régression, séries temporelles
 - **Analyse de données** – statistiques descriptives et inférentielles
 - **Rédaction de rapports** – communication écrite professionnelle
@@ -70,7 +68,7 @@ Le fait de faire de l'arbitrage m'a également permis de prendre davantage **con
 
 ---
 
-## Qualités personnelles
+# Qualités personnelles
 
 - **Rigueur** et **organisation** dans le travail
 - **Esprit d'équipe** développé grâce au sport
@@ -82,6 +80,6 @@ Le fait de faire de l'arbitrage m'a également permis de prendre davantage **con
 
 ---
 
-## Contact
+# Contact
 
 N'hésitez pas à me contacter pour échanger sur la data science, les opportunités professionnelles ou simplement discuter de basket-ball !
