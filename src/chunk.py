@@ -2,7 +2,15 @@ from load import load_file
 import re
 
 def chunk_file(path:str, content_file:str) -> list:
-    
+    """
+    Découpe le contenu d'un fichier texte en chunks basés sur les titres de niveau 1, 2 et 3.
+    Args:
+        path: Chemin vers le fichier à lire 
+        content_file: Contenu du fichier à découper  
+    Returns:
+        Liste des chunks extraits du fichier
+    """
+
     content = load_file(path)
     chunks = []
     lines = content.split('\n')
