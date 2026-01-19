@@ -27,7 +27,7 @@ def chunk_file(path:str, content_file:str) -> list:
     
     return chunks    
 
-chunks = chunk_file('data/projets.md', load_file('data/projets.md'))
+chunks = chunk_file('data/experience.md', load_file('data/experience.md'))
 for i, chunk in enumerate(chunks, 1):
     print(f"\n{'='*60}\nCHUNK {i}\n{'='*60}")
     print(chunk)
