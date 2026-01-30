@@ -48,19 +48,13 @@ div.stButton > button {
 # initialisation de la session
 if "agent" not in st.session_state:
     st.session_state.agent = get_agent()
-    st.write("[DEBUG] Agent initialisé")
 
 if "indexed" not in st.session_state:
-    st.write("[DEBUG] Début de l'indexation des fichiers Markdown...")
     files = load_files()
-    st.write(f"[DEBUG] Nombre de fichiers chargés : {len(files)}")
-
     chunks = chunk_files(files)
-    st.write(f"[DEBUG] Nombre total de chunks générés : {len(chunks)}")
 
     if chunks:
         index_chunks(chunks)
-        st.write("[DEBUG] Indexation terminée ✅")
         st.session_state.indexed = True
     else:
         st.error("Aucun chunk n'a été généré – vérifiez les fichiers Markdown")
@@ -71,7 +65,6 @@ if "messages" not in st.session_state:
 # boutton : nouvelle conversation
 if st.button("Nouvelle conversation"):
     st.session_state.messages = []
-    st.write("[DEBUG] Nouvelle conversation lancée")
     st.rerun()
 
 # affichage du chat
@@ -102,7 +95,6 @@ def process_question(question):
     st.session_state.messages.append(
         {"role": "user", "content": question}
     )
-    st.write(f"[DEBUG] Question posée : {question}")
 
     context_messages = []
     recent_messages = (
@@ -134,7 +126,6 @@ def process_question(question):
     st.session_state.messages.append(
         {"role": "assistant", "content": response}
     )
-    st.write(f"[DEBUG] Réponse générée : {response}")
     st.rerun()
 
 # Boutton : questions proposées

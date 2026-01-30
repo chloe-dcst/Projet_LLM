@@ -50,6 +50,7 @@ def index_chunks(chunks: list, path: str) -> str:
     print(f"[DEBUG] {len(chunks)} chunks indexés depuis {path}")
     return f"✓ {len(chunks)} chunks indexés depuis {path}"
 
+
 # Liste des fichiers et leurs paths
 files_to_index = [
     "data/experience.md",
