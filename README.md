@@ -10,3 +10,6 @@
 
 4. Lancer l'application :
    streamlit run src/app_ia.py
+
+
+Je n'ai pas réussi à deployer mon outil, car j'avais plusieurs erreurs que je n'ai pas réussi à régler.
