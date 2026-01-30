@@ -16,22 +16,23 @@ def chunk_file(path:str, content_file:str) -> list:
     lines = content.split('\n')
     current_chunk = []
     h1_context = ""
+    h2_context = ""
     
     for line in lines:
         if re.match(r'^# ', line):
             if current_chunk: 
                 chunks.append('\n'.join(current_chunk).strip())
             h1_context = line
-            current_chunk = []
+            h2_context = ""
+            current_chunk = [h1_context]
         elif re.match(r'^## ', line):
             if current_chunk: 
                 chunks.append('\n'.join(current_chunk).strip())
             h2_context = line
             current_chunk = [h1_context, h2_context] if h1_context else [line]
         elif re.match(r'^### ', line):
-            if current_chunk:
-                chunks.append('\n'.join(current_chunk).strip())
-            current_chunk = [h1_context, h2_context, line] if h2_context else [h1_context, line] if h1_context else [line]
+            # Pour les H3, on garde le contenu dans le même chunk au lieu de créer un nouveau
+            current_chunk.append(line)
         else:
             current_chunk.append(line)
     

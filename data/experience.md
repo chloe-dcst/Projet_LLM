@@ -114,19 +114,14 @@ Mise en place de processus automatisés pour :
 
 ## Apports de l'alternance
 
-### Mise en pratique des connaissances
-
 L'alternance me permet de **mettre en pratique immédiatement** les connaissances acquises en cours dans un contexte professionnel réel. Cette application concrète renforce considérablement ma compréhension et ma maîtrise des concepts.
 
-### Découverte du monde de l'entreprise
 
 J'ai découvert les codes et le fonctionnement d'une grande entreprise :
 - Culture d'entreprise et valeurs
 - Organisation hiérarchique et processus de décision
 - Gestion de projets en environnement professionnel
 - Importance de la communication et du relationnel
-
-### Montée en compétences
 
 L'alternance m'a permis de **monter en compétences** de manière significative :
 
@@ -145,14 +140,10 @@ L'alternance m'a permis de **monter en compétences** de manière significative 
 
 ## Gestion de la charge de travail
 
-### Organisation entre école et entreprise
-
 La deuxième année en alternance a été intense mais très enrichissante. J'ai réussi à maintenir :
 - **Aucune difficulté majeure** côté cours
 - **Bonne performance** en entreprise
 - **Équilibre** entre vie professionnelle, scolaire et personnelle
-
-### Stratégies d'organisation
 
 - **Priorisation** des tâches importantes
 - **Planning rigoureux** pour anticiper les périodes chargées
@@ -163,15 +154,11 @@ La deuxième année en alternance a été intense mais très enrichissante. J'ai
 
 ## Bilan de l'alternance
 
-### Un choix sans regret
-
 Je ne regrette absolument pas le choix de l'alternance. C'est une expérience **extrêmement formatrice** qui me permet de :
 - Gagner en **maturité professionnelle**
 - Développer un **réseau professionnel**
 - Comprendre les **enjeux réels** du métier
 - Me projeter dans mon **avenir professionnel**
-
-### Ce que l'alternance m'a apporté
 
 L'alternance représente pour moi **la formation la plus enrichissante et professionnalisante**. Elle offre :
 

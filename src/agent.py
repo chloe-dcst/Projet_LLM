@@ -23,10 +23,10 @@ def search_portfolio(query: str) -> str:
         Les informations trouvées dans le portfolio
     """
     try:
-        # Rechercher les 5 chunks les plus pertinents
+        # Rechercher les 10 chunks les plus pertinents
         results = upstash_index.query(
             data=query,
-            top_k=5,
+            top_k=10,
             include_metadata=True
         )
         
@@ -36,7 +36,7 @@ def search_portfolio(query: str) -> str:
         # Formater les résultats sans mentionner les sources
         context = []
         for result in results:
-            content = result.metadata.get('content', '')
+            content = result.metadata.get('text', '')
             context.append(content)
         
         return "\n\n".join(context)
