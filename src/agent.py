@@ -6,7 +6,7 @@ from upstash_vector import Index
 # Charger les variables d'environnement
 load_dotenv()
 
-# Initialiser l'index Upstash
+# Initialiser l'index Upstash depuis les secrets
 upstash_index = Index(
     url=os.getenv('UPSTASH_VECTOR_REST_URL'),
     token=os.getenv('UPSTASH_VECTOR_REST_TOKEN')
@@ -23,26 +23,32 @@ def search_portfolio(query: str) -> str:
         Les informations trouvées dans le portfolio
     """
     try:
+        print(f"[DEBUG] Recherche Upstash pour la query : {query}")
+
         # Rechercher les 10 chunks les plus pertinents
         results = upstash_index.query(
             data=query,
             top_k=10,
             include_metadata=True
         )
-        
+
+        print(f"[DEBUG] Nombre de résultats trouvés : {len(results)}")
+
         if not results:
             return "Aucune information trouvée dans le portfolio."
-        
+
         # Formater les résultats sans mentionner les sources
         context = []
         for result in results:
             content = result.metadata.get('text', '')
             context.append(content)
-        
+
         return "\n\n".join(context)
-        
+
     except Exception as e:
+        print(f"[DEBUG] Erreur lors de la recherche : {e}")
         return f"Erreur lors de la recherche: {e}"
+
 
 # Créer l'agent
 portfolio_agent = Agent(
@@ -59,22 +65,21 @@ Ton rôle :
 - Répond à la question sans passer par 4 chemins et n'ajoute pas des éléments de réponses non attendu
 
 Gestion des questions incompréhensibles :
-- Si le message est incompréhensible, sans sens, ou n'est pas une vraie question (ex: "nezdfmckshlfziepuk", "aaaa", etc.), réponds : "Je n'ai pas compris votre question. Pouvez-vous la reformuler s'il vous plaît ?"
-- ATTENTION : Si le message fait référence à la conversation précédente (ex: "peux-tu m'en dire plus ?", "et ensuite ?", "explique-moi ça", etc.), c'est une question VALIDE qui utilise le contexte de l'historique
-- Ne cherche PAS dans le portfolio si la question n'a pas de sens ou est incompréhensible
-- Vérifie d'abord si le message est compréhensible (en tenant compte du contexte fourni) avant d'utiliser search_portfolio
+- Si le message est incompréhensible, réponds : "Je n'ai pas compris votre question. Pouvez-vous la reformuler s'il vous plaît ?"
+- Si le message fait référence à la conversation précédente, c'est une question valide
+- Ne cherche PAS dans le portfolio si la question n'a pas de sens
 
 Consignes importantes :
-- Soit toujours poli (bonjour, au revoir, ... etc)
-- TOUJOURS utiliser search_portfolio avant de répondre à une question sur Chloé (sauf si la question n'a pas de sens)
+- Soit toujours poli
+- TOUJOURS utiliser search_portfolio avant de répondre à une question sur Chloé
 - Si la première recherche ne donne pas assez de résultats, faire une recherche complémentaire avec des mots-clés différents
-- Par exemple, pour "projets en data visualisation", chercher aussi "plotly", "power bi", "graphiques", "tableaux de bord"
 - Lister TOUS les projets trouvés, pas seulement les plus pertinents
 - Ne pas inventer d'informations qui ne sont pas dans le portfolio
 - Ne pas mentionner les sources ou numéros de sources dans ta réponse
-- Être concis mais complet dans tes réponses""",
+- Être concis mais complet""",
     tools=[search_portfolio]
 )
+
 
 def ask_agent(question: str) -> str:
     """
@@ -84,15 +89,15 @@ def ask_agent(question: str) -> str:
     Returns:
         La réponse de l'agent
     """
-    print(f"\n Question: {question}")
-    print("Agent réfléchit...\n")
-    
+    print(f"\n[DEBUG] Question posée à l'agent : {question}")
+    print("[DEBUG] Agent réfléchit...\n")
+
     result = Runner.run_sync(portfolio_agent, question)
-    
     answer = result.final_output
-    print(f"Réponse: {answer}\n")
-    
+
+    print(f"[DEBUG] Réponse de l'agent : {answer}\n")
     return answer
+
 
 def get_agent():
     """
@@ -102,18 +107,19 @@ def get_agent():
     """
     return portfolio_agent
 
+
 if __name__ == '__main__':
     print("=" * 80)
     print("PORTFOLIO ASSISTANT - Chloé Découst")
     print("=" * 80)
-    
+
     # Exemples de questions
     questions = [
         "Quelles sont les compétences techniques de Chloé ?",
         "Parle-moi de son expérience avec le basket-ball",
         "Quels projets a-t-elle réalisés en data visualisation ?"
     ]
-    
+
     for question in questions:
         ask_agent(question)
         print("-" * 80)

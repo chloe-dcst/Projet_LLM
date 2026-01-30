@@ -7,10 +7,10 @@ from dotenv import load_dotenv
 # Charger les variables d'environnement
 load_dotenv()
 
-# import des informations d'identification
+# Initialiser l'index Upstash depuis les secrets
 index = Index.from_env()
 
-def index_chunks(chunks:list, path:str) -> str:
+def index_chunks(chunks: list, path: str) -> str:
     """
     Indexe une liste de chunks dans Upstash Vector.
     
@@ -22,7 +22,10 @@ def index_chunks(chunks:list, path:str) -> str:
         Message de confirmation
     """
     vectors_data = []
-    
+
+    print(f"[DEBUG] Indexation du fichier : {path}")
+    print(f"[DEBUG] Nombre de chunks à indexer : {len(chunks)}")
+
     for i, chunk in enumerate(chunks):
         # Créer un ID unique pour chaque chunk
         chunk_id = hashlib.md5(f"{path}_{i}_{chunk[:50]}".encode()).hexdigest()
@@ -43,18 +46,33 @@ def index_chunks(chunks:list, path:str) -> str:
     
     # Indexer les chunks
     index.upsert(vectors=vectors_data)
-    
+
+    print(f"[DEBUG] {len(chunks)} chunks indexés depuis {path}")
     return f"✓ {len(chunks)} chunks indexés depuis {path}"
 
-chunks_experience = chunk_file('data/experience.md', load_file('data/experience.md'))
-result = index_chunks(chunks_experience, 'data/experience.md')
-print(result)
+# Liste des fichiers et leurs paths
+files_to_index = [
+    "data/experience.md",
+    "data/projets.md",
+    "data/a-propos.md",
+    "data/formation.md"
+]
 
-chunks_projet = chunk_file('data/projets.md', load_file('data/projets.md'))
-index_chunks(chunks_projet, 'data/projets   .md')
+total_chunks_indexed = 0
 
-chunks_propos = chunk_file('data/a-propos.md', load_file('data/a-propos.md'))
-index_chunks(chunks_propos, 'data/a-propos.md')
+for file_path in files_to_index:
+    # Charger le fichier
+    content = load_file(file_path)
+    print(f"[DEBUG] Fichier chargé : {file_path} ({len(content)} caractères)")
 
-chunks_formation = chunk_file('data/formation.md', load_file('data/formation.md'))
-index_chunks(chunks_formation, 'data/formation.md')
+    # Découper en chunks
+    chunks = chunk_file(file_path, content)
+    print(f"[DEBUG] Chunks générés : {len(chunks)}")
+
+    # Indexer les chunks
+    result = index_chunks(chunks, file_path)
+    print(result)
+
+    total_chunks_indexed += len(chunks)
+
+print(f"[DEBUG] Nombre total de chunks indexés : {total_chunks_indexed}")
