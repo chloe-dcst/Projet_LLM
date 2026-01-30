@@ -1,13 +1,7 @@
-"""
-Agent IA pour répondre aux questions sur le portfolio.
-Utilise openai-agents avec une tool de recherche vectorielle (RAG).
-"""
-
 import os
 from dotenv import load_dotenv
 from agents import Agent, Runner, function_tool
 from upstash_vector import Index
-
 
 # Charger les variables d'environnement
 load_dotenv()
@@ -18,24 +12,21 @@ upstash_index = Index(
     token=os.getenv('UPSTASH_VECTOR_REST_TOKEN')
 )
 
-
 @function_tool
 def search_portfolio(query: str) -> str:
     """
     Recherche des informations dans le portfolio de Chloé.
-    Utilise la recherche vectorielle pour trouver les informations pertinentes.
-    
+    Utilise la recherche vectorielle pour trouver les informations pertinentes.   
     Args:
-        query: La question ou le sujet à rechercher dans le portfolio
-        
+        query: La question ou le sujet à rechercher dans le portfolio       
     Returns:
         Les informations trouvées dans le portfolio
     """
     try:
-        # Rechercher les 5 chunks les plus pertinents
+        # Rechercher les 10 chunks les plus pertinents
         results = upstash_index.query(
             data=query,
-            top_k=5,
+            top_k=10,
             include_metadata=True
         )
         
@@ -45,14 +36,13 @@ def search_portfolio(query: str) -> str:
         # Formater les résultats sans mentionner les sources
         context = []
         for result in results:
-            content = result.metadata.get('content', '')
+            content = result.metadata.get('text', '')
             context.append(content)
         
         return "\n\n".join(context)
         
     except Exception as e:
         return f"Erreur lors de la recherche: {e}"
-
 
 # Créer l'agent
 portfolio_agent = Agent(
@@ -64,11 +54,19 @@ Ton rôle :
 - Répondre aux questions sur ses compétences, projets, expériences et formations
 - Utiliser la tool 'search_portfolio' pour chercher des informations précises
 - Être précis et factuel en te basant sur les informations trouvées
-- Répondre en français de manière professionnelle et claire
+- Répondre en français de manière professionnelle et CLAIRE
 - Si une information n'est pas dans le portfolio, le dire clairement
+- Répond à la question sans passer par 4 chemins et n'ajoute pas des éléments de réponses non attendu
+
+Gestion des questions incompréhensibles :
+- Si le message est incompréhensible, sans sens, ou n'est pas une vraie question (ex: "nezdfmckshlfziepuk", "aaaa", etc.), réponds : "Je n'ai pas compris votre question. Pouvez-vous la reformuler s'il vous plaît ?"
+- ATTENTION : Si le message fait référence à la conversation précédente (ex: "peux-tu m'en dire plus ?", "et ensuite ?", "explique-moi ça", etc.), c'est une question VALIDE qui utilise le contexte de l'historique
+- Ne cherche PAS dans le portfolio si la question n'a pas de sens ou est incompréhensible
+- Vérifie d'abord si le message est compréhensible (en tenant compte du contexte fourni) avant d'utiliser search_portfolio
 
 Consignes importantes :
-- TOUJOURS utiliser search_portfolio avant de répondre à une question sur Chloé
+- Soit toujours poli (bonjour, au revoir, ... etc)
+- TOUJOURS utiliser search_portfolio avant de répondre à une question sur Chloé (sauf si la question n'a pas de sens)
 - Si la première recherche ne donne pas assez de résultats, faire une recherche complémentaire avec des mots-clés différents
 - Par exemple, pour "projets en data visualisation", chercher aussi "plotly", "power bi", "graphiques", "tableaux de bord"
 - Lister TOUS les projets trouvés, pas seulement les plus pertinents
@@ -78,31 +76,35 @@ Consignes importantes :
     tools=[search_portfolio]
 )
 
-
 def ask_agent(question: str) -> str:
     """
     Pose une question à l'agent.
-    
     Args:
-        question: La question à poser
-        
+        question: La question à poser  
     Returns:
         La réponse de l'agent
     """
-    print(f"\n❓ Question: {question}")
-    print("🤖 Agent réfléchit...\n")
+    print(f"\n Question: {question}")
+    print("Agent réfléchit...\n")
     
     result = Runner.run_sync(portfolio_agent, question)
     
     answer = result.final_output
-    print(f"💬 Réponse: {answer}\n")
+    print(f"Réponse: {answer}\n")
     
     return answer
 
+def get_agent():
+    """
+    Retourne l'agent configuré pour l'utiliser dans d'autres modules.
+    Returns:
+        L'agent portfolio_agent
+    """
+    return portfolio_agent
 
 if __name__ == '__main__':
     print("=" * 80)
-    print("🤖 PORTFOLIO ASSISTANT - Chloé Découst")
+    print("PORTFOLIO ASSISTANT - Chloé Découst")
     print("=" * 80)
     
     # Exemples de questions
