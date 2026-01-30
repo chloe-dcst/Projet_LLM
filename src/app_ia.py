@@ -3,10 +3,6 @@ import sys
 from pathlib import Path
 from agents import Runner
 from agent import get_agent
-from load import load_files
-from chunk import chunk_files
-from index import index_chunks
-
 
 # configuration du path
 src_path = Path(__file__).parent
@@ -48,16 +44,6 @@ div.stButton > button {
 # initialisation de la session
 if "agent" not in st.session_state:
     st.session_state.agent = get_agent()
-
-if "indexed" not in st.session_state:
-    files = load_files()
-    chunks = chunk_files(files)
-
-    if chunks:
-        index_chunks(chunks)
-        st.session_state.indexed = True
-    else:
-        st.error("Aucun chunk n'a été généré – vérifiez les fichiers Markdown")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
