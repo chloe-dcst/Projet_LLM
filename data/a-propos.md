@@ -1,7 +1,3 @@
-*Passionnée par la data science, le basket-ball et l'apprentissage continu*
-
----
-
 # Qui suis-je ?
 
 Étudiante en BUT Science des Données, je suis actuellement en troisième année en alternance au sein du groupe **Covéa**, où je travaille dans l'équipe *Pilotage – Opérationnel* de la direction **Santé Prévoyance**. Je suis en charge de la **création de tableaux de bord** pour le suivi de l'activité des équipes métiers.
@@ -68,7 +64,7 @@ Le fait de faire de l'arbitrage m'a également permis de prendre davantage **con
 
 ---
 
-# Qualités personnelles
+# Compétences personnelles
 
 - **Rigueur** et **organisation** dans le travail
 - **Esprit d'équipe** développé grâce au sport

@@ -48,4 +48,7 @@ for i, chunk in enumerate(chunks, 1):
     print(f"\n{'='*60}\nCHUNK {i}\n{'='*60}")
     print(chunk)
 
-    
+chunk_file('data/experience.md', load_file('data/experience.md'))
+chunk_file('data/a-propos.md', load_file('data/a-propos.md'))
+chunk_file('data/formation.md', load_file('data/formation.md'))
+chunk_file('data/projets.md', load_file('data/projets.md'))

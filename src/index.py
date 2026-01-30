@@ -46,6 +46,15 @@ def index_chunks(chunks:list, path:str) -> str:
     
     return f"✓ {len(chunks)} chunks indexés depuis {path}"
 
-chunks = chunk_file('data/experience.md', load_file('data/experience.md'))
-result = index_chunks(chunks, 'data/experience.md')
+chunks_experience = chunk_file('data/experience.md', load_file('data/experience.md'))
+result = index_chunks(chunks_experience, 'data/experience.md')
 print(result)
+
+chunks_projet = chunk_file('data/projets.md', load_file('data/projets.md'))
+index_chunks(chunks_projet, 'data/projets.md')
+
+chunks_propos = chunk_file('data/a-propos.md', load_file('data/a-propos.md'))
+index_chunks(chunks_propos, 'data/a-propos.md')
+
+chunks_formation = chunk_file('data/formation.md', load_file('data/formation.md'))
+index_chunks(chunks_formation, 'data/formation.md')

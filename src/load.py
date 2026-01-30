@@ -15,3 +15,6 @@ def load_file(path:str) -> str:
 
 content = load_file('data/projets.md')
 print(content)
+load_file('data/a-propos.md')
+load_file('data/experience.md')
+load_file('data/formation.md')

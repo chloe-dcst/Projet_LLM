@@ -10,7 +10,7 @@ if str(src_path) not in sys.path:
 from agents import Runner
 from agent import get_agent
 
-st.title("Portfolio IA")
+st.title("Portfolio IA de Chloé DECOUST")
 
 # Initialiser l'agent
 if "agent" not in st.session_state:
@@ -19,6 +19,11 @@ if "agent" not in st.session_state:
 # Initialiser l'historique des messages
 if "messages" not in st.session_state:
     st.session_state.messages = []
+
+# Boutton : nouvelle conversation
+if st.button("Nouvelle conversation"):
+    st.session_state.messages = []
+    st.rerun()
 
 # Afficher l'historique des messages
 for message in st.session_state.messages:
@@ -38,8 +43,21 @@ if prompt := st.chat_input("Posez votre question..."):
     with st.chat_message("assistant"):
         with st.spinner("Réflexion en cours..."):
             try:
+                # Construire le contexte avec l'historique récent
+                context_messages = []
+                # Prendre les 4 derniers messages (2 échanges) pour ne pas surcharger
+                recent_messages = st.session_state.messages[-4:] if len(st.session_state.messages) > 4 else st.session_state.messages[:-1]
+                for msg in recent_messages:
+                    context_messages.append(f"{msg['role'].capitalize()}: {msg['content']}")
+                
+                # Construire le prompt avec contexte
+                if context_messages:
+                    full_prompt = "Historique récent:\n" + "\n".join(context_messages) + f"\n\nQuestion actuelle: {prompt}"
+                else:
+                    full_prompt = prompt
+                
                 # Exécuter l'agent
-                result = Runner.run_sync(st.session_state.agent, prompt)
+                result = Runner.run_sync(st.session_state.agent, full_prompt)
                 
                 # Extraire la réponse
                 response = result.final_output if hasattr(result, 'final_output') else str(result)
