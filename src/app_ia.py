@@ -61,6 +61,24 @@ for message in st.session_state.messages:
 
 # Fonction de récupération et traitement des questions / réponses bouttons
 def process_question(question):
+    """
+    Traite une question posée par l'utilisateur et génère une réponse de l'agent.
+    
+    Cette fonction gère l'ensemble du cycle de traitement d'une question :
+    - Ajoute la question à l'historique de la conversation
+    - Récupère le contexte des messages récents (4 derniers échanges)
+    - Construit un prompt enrichi avec l'historique pour maintenir la cohérence
+    - Interroge l'agent OpenAI qui utilise la recherche vectorielle Upstash
+    - Ajoute la réponse à l'historique et actualise l'interface
+    
+    Args:
+        question (str): La question posée par l'utilisateur, soit via les boutons 
+                       prédéfinis, soit via la barre de saisie
+    
+    Returns:
+        None: La fonction met à jour directement st.session_state.messages 
+              et provoque un rechargement de la page avec st.rerun()
+    """
     st.session_state.messages.append(
         {"role": "user", "content": question}
     )
